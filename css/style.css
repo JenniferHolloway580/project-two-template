@@ -1,17 +1,19 @@
-/* Enter your Styles below! */
-
-
 body { 
-	font-family: Helvetica, sans-serif;
+
+	font-family: 'Martel', serif;
+	text-align: right;
 	font-size: 16px;
 	 }
 
 h1, h2, h3, h4 {
-	font-family: Helvetica, sans-serif;
+	font-family: 'Martel', serif;
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 20px;
+	color: green;
+	text-align: center;
+
 }
 
 h2 {
@@ -27,19 +29,75 @@ h4 {
 
 blockquote {
 	margin: 20px 60px;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Martel', serif;
 }
 
+/* Header styles */
+
 header {margin-bottom: 20px;}
+
+}
+
+header.reservations-bg { 
+	background-image: url(../Images/luce-image-1.png);
+	background-position: 30% 50%;
+}
 
 /* ensures that your images stretch the width of their containers */
 img { width: 100%; }
 
+/* Main styles */
+/*Logo image size info below:*/
+header > img {
+	width: 220px;
+	height: auto;
+	padding-top: 2.9em;
+}
+
+#contact {
+	color: green;
+}
+
+#content {
+	color: black;
+	width: 300px;
+	text-align: left !important;
+	margin: 0 auto;
+	padding-top: 2.9em;
+}
+
+
+#slider {
+	width: 720px;
+	height: 400px;
+	overflow: hidden;
+}
+
+#slider .slides {
+	display: block;
+	width: 6000px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+#slider .slide {
+	float: left;
+	list-style-type: none;
+	width: 720px;
+	height: 400px;
+}
+
+/* Nav styles */
 a { 
-	color: red;
+	color: green;
+	float: right;
+	padding: 280px 20px;
 	text-decoration: none;
 	 }
-a:hover { color: black; }
+a:hover { color: gold; 
+
+}
 
 .grid {
 	display: grid;
@@ -53,7 +111,34 @@ a:hover { color: black; }
 	background-color: #ccc;
 	padding: 20px;
 }
-/*
+
+}
+
+@media only screen and (min-width: 768px)
+body { 
+background-color: skyblue:
+ }
+
+}
+
+@media only screen and (min-width: 1024px)
+	body { 
+background-color: salmon:
+ }
+
+}
+
+@media only screen and (min-width: 768px)
+	body { 
+background-color: skyblue:
+ }
+
+}
+@media only screen and (min-width: 1200px)
+	body { 
+background-color: pink:
+ }
+ /*
 font-family: 'Mansalva', cursive;
 font-family: 'Dosis', sans-serif;
 font-family: 'Indie Flower', cursive;
