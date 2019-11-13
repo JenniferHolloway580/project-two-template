@@ -13,15 +13,25 @@ h1 {
 	font-size: 20px;
 	color: green;
 	text-align: center;
+	padding-top: 14.5em;
 
 }
 
 h2 {
-	font-size: 36px;
+	font-size: 20px;
+	color: green;
+	text-align: center;
+	line-height: 50.4em;
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 20px;
+	color: green;
+	text-align: center;
+}
+
+h3 {
+	font-size: 20px;
 }
 h4 {
 	font-size: 24px;
