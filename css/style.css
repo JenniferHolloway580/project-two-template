@@ -1,7 +1,7 @@
 body { 
 
 	font-family: 'Martel', serif;
-	text-align: right;
+	text-align: left;
 	font-size: 16px;
 	 }
 
@@ -21,7 +21,7 @@ h2 {
 	font-size: 20px;
 	color: green;
 	text-align: center;
-	line-height: 50.4em;
+	line-height: 24.4em;
 }
 
 h3 {
@@ -102,7 +102,7 @@ header > img {
 a { 
 	color: green;
 	float: right;
-	padding: 280px 20px;
+	padding: 160px 20px;
 	text-decoration: none;
 	 }
 a:hover { color: gold; 
@@ -118,7 +118,7 @@ a:hover { color: gold;
 }
 
 .grid div {
-	background-color: #ccc;
+	background-color: 0;
 	padding: 20px;
 }
 
