@@ -18,10 +18,10 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
-	color: green;
-	text-align: center;
-	line-height: 24.4em;
+	font-size: 16px;
+	color: black;
+	text-align: left;
+	line-height: 1.2em;
 }
 
 h3 {
@@ -42,6 +42,18 @@ blockquote {
 	font-family: 'Martel', serif;
 }
 
+strong {
+font-weight: bold !important; 
+font-size: 16px;
+}
+
+/* 3. Style your slideshow */
+.slideshow {
+	width: 80%;
+	height: 400px;
+	margin: 20px auto;
+	outline: none;
+}
 /* Header styles */
 
 header {margin-bottom: 20px;}
@@ -54,7 +66,11 @@ header.reservations-bg {
 }
 
 /* ensures that your images stretch the width of their containers */
-img { width: 100%; }
+img { width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Main styles */
 /*Logo image size info below:*/
@@ -62,6 +78,9 @@ header > img {
 	width: 220px;
 	height: auto;
 	padding-top: 2.9em;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #contact {
@@ -77,7 +96,7 @@ header > img {
 }
 
 
-#slider {
+/*#slider {
 	width: 720px;
 	height: 400px;
 	overflow: hidden;
@@ -96,18 +115,45 @@ header > img {
 	list-style-type: none;
 	width: 720px;
 	height: 400px;
-}
+}*/
 
 /* Nav styles */
-a { 
+
+nav {
+	width: 750px;
+	margin:0 auto;
+	list-style: none;
+	padding-bottom: 100px;
+}
+
+nav li {
+	float: left;
+}
+
+/*nav a { 
 	color: green;
-	float: right;
-	padding: 160px 20px;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 100px;
 	text-decoration: none;
+	display: inline-block;
 	 }
 a:hover { color: gold; 
 
+}*/
+
+nav a {
+	color: green;
+	display: block;
+	text-align: center;
+	width: 150px;
+	text-decoration: none;
+	padding-top: 60px;
 }
+nav a:hover {color: gold;
+}
+
 
 .grid {
 	display: grid;
