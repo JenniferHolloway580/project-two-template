@@ -40,6 +40,7 @@ h4 {
 blockquote {
 	margin: 20px 60px;
 	font-family: 'Martel', serif;
+	text-align: left;
 }
 
 strong {
@@ -95,6 +96,9 @@ header > img {
 	padding-top: 2.9em;
 }
 
+.grid img {
+	width: 40%;
+}
 
 /*#slider {
 	width: 720px;
@@ -159,7 +163,7 @@ nav a:hover {color: gold;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 40px;
-	width: 60%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -194,6 +198,12 @@ background-color: skyblue:
 	body { 
 background-color: pink:
  }
+
+/* Footer styles */
+footer img{ 
+	width: 100%;
+}
+
  /*
 font-family: 'Mansalva', cursive;
 font-family: 'Dosis', sans-serif;
