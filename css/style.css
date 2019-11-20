@@ -10,10 +10,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	font-size: 20px;
+	font-size: 24px;
 	color: green;
 	text-align: center;
-	padding-top: 14.5em;
+	padding-top: 1.5em;
+	padding-left: 10.1em;
 
 }
 
@@ -110,6 +111,12 @@ header > img {
 	width: 40%;
 }
 
+.home-about-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:10px;
+}
+
 /*#slider {
 	width: 720px;
 	height: 400px;
@@ -131,43 +138,108 @@ header > img {
 	height: 400px;
 }*/
 
-/* Nav styles */
 
-nav {
-	width: 750px;
-	margin:0 auto;
-	list-style: none;
-	padding-bottom: 100px;
+
+.nav, .desktop {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 900;
 }
 
-nav li {
-	float: left;
+.icon {
+    position: fixed;
+    cursor: pointer;
+    top: 5%;
+    right: 0%;
+    width: 40px;
+    height: 45px;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 1000;
 }
 
-/*nav a { 
-	color: green;
-	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 100px;
-	text-decoration: none;
-	display: inline-block;
-	 }
-a:hover { color: gold; 
-
-}*/
-
-nav a {
-	color: green;
-	display: block;
-	text-align: center;
-	width: 150px;
-	text-decoration: none;
-	padding-top: 60px;
-}
-nav a:hover {color: gold;
+.hamburger {
+    width: 40px;
+    height: 4px;
+    line-height: 70px;
+    background: #666;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
 }
 
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #666;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+
+.hamburger:before {
+    top: -10px;
+}
+
+.hamburger:after {
+    top: 10px;
+}
+
+.icon.active .hamburger {
+    background: rgba(0,0,0,0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+
+.icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.menu-mobile {
+    background-color: #efefef;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-top: 150px;
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+.menu-mobile, .menu-mobile a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menu-mobile a {
+    clear: right;
+    text-decoration: none;
+    color: #333;
+    height: 70px;
+    line-height: 70px;
+}
+.menu-mobile a:hover {
+    color: red;
+}
+
+.desktop, .menu-desktop, .menu-mobile {
+        display: none;
+    }
 
 .grid {
 	display: grid;
@@ -191,12 +263,114 @@ body {
 	font-size: 1.25rem;
  }
 
+.desktop nav {
+	width: 750px;
+	margin:0 auto;
+	list-style: none;
+	padding-bottom: 100px;
 }
 
-@media only screen and (min-width: 1024px)
-	body { 
-background-color: salmon:
- }
+.desktop  li {
+	float: left;
+}
+
+/*nav a { 
+	color: green;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 100px;
+	text-decoration: none;
+	display: inline-block;
+	 }
+a:hover { color: gold; 
+
+}*/
+
+.desktop nav a {
+	color: green;
+	display: block;
+	text-align: center;
+	width: 150px;
+	text-decoration: none;
+	padding-top: 60px;
+}
+.desktop nav a:hover {color: gold;
+}
+
+}
+
+@media only screen and (min-width: 1024px){
+/* Nav styles */
+
+.hamburger, .mobile {display: none;}
+  .menu-desktop {
+        display: block;
+        padding: 0;
+        justify-content: space-evenly;
+        flex-direction: row;
+        height: 0;
+        text-align: rightabsola
+    }
+	.menu-desktop {
+		margin-top:140px;
+	}
+
+    .menu-desktop a {
+        display: inline-flex;
+        margin-right: 30px;
+        height: 0;
+        line-height: 50px;
+        text-decoration: none;
+        justify-content: space-evenly;
+    }
+    .menu-desktop a:hover {
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        display: block;
+    }
+
+    header.nav, .menu-mobile {
+        display: none;
+    }
+
+	nav {
+		margin:0 auto;
+		list-style: none;
+		padding-bottom: 100px;
+	}
+
+	nav li {
+		float: left;
+	}
+
+	nav a { 
+		color: green;
+		text-align: center;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 100px;
+		text-decoration: none;
+		display: inline-block;
+		 }
+	a:hover { color: gold; 
+
+	}
+
+	nav a {
+		color: green;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		padding-top: 60px;
+	}
+	nav a:hover {color: gold;
+	}
+
 
 }
 
