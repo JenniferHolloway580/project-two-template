@@ -142,9 +142,6 @@ header > img {
 
 .nav, .desktop {
     display: block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
     width: 100%;
     z-index: 900;
 }
@@ -310,10 +307,10 @@ a:hover { color: gold;
         justify-content: space-evenly;
         flex-direction: row;
         height: 0;
-        text-align: rightabsola
+        margin: auto;
+        width: 80%;
     }
 	.menu-desktop {
-		margin-top:140px;
 	}
 
     .menu-desktop a {

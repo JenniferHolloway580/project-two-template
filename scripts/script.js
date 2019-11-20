@@ -15,15 +15,7 @@ function closeMobileMenu(){
 
 
 
-function desktopMenu() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 50 && $(window).width() > 768) {
-            $('header.desktop').fadeIn(500);
-        } else {
-            $('header.desktop').fadeOut(500);
-        }
-    })
-}
+
 
 //when the page loads call toggleIcon;
 $(toggleIcon);
