@@ -1,12 +1,12 @@
 body { 
 
-	font-family: 'Martel', serif;
+	font-family: 'PT Serif', serif;
 	text-align: left;
 	font-size: 16px;
 	 }
 
 h1, h2, h3, h4 {
-	font-family: 'Martel', serif;
+	font-family: 'PT Serif', serif;
 }
 
 h1 {
@@ -34,14 +34,24 @@ h3 {
 	font-size: 20px;
 }
 h4 {
-	font-size: 24px;
+	font-size: 20px;
+	color: green;
+	text-align: center;
+	padding-top: 14.5em;
+	font-style: italic;
 }
 
+.menu-title { 
+	font-style: italic;
+	font-weight: normal;
+}
 blockquote {
 	margin: 20px 60px;
-	font-family: 'Martel', serif;
+	font-family: 'PT Serif', serif;
 	text-align: left;
+	font-style: italic;
 }
+
 
 strong {
 font-weight: bold !important; 
@@ -172,11 +182,13 @@ nav a:hover {color: gold;
 	padding: 20px;
 }
 
+.menu-page .grid {
+	width: 60%;
 }
 
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px) {
 body { 
-background-color: skyblue:
+	font-size: 1.25rem;
  }
 
 }
