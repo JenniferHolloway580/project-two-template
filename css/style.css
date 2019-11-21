@@ -44,7 +44,7 @@ h4 {
 
 .menu-title { 
 	font-style: italic;
-	font-weight: normal;
+	font-weight: lighter;
 }
 blockquote {
 	margin: 20px 60px;
@@ -162,7 +162,7 @@ header > img {
     width: 40px;
     height: 4px;
     line-height: 70px;
-    background: #666;
+    background: #a1d2c0;
     border-radius: 5px;
     position: absolute;
     top: 50%;
@@ -178,7 +178,7 @@ header > img {
     position: absolute;
     width: 40px;
     height: 4px;
-    background: #666;
+    background: #a1d2c0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
     transition: .5s;
@@ -225,13 +225,14 @@ header > img {
 }
 .menu-mobile a {
     clear: right;
+	font-family: 'PT Serif', serif;
     text-decoration: none;
     color: #333;
     height: 70px;
     line-height: 70px;
 }
 .menu-mobile a:hover {
-    color: red;
+    color: gold;
 }
 
 .desktop, .menu-desktop, .menu-mobile {
@@ -297,7 +298,7 @@ a:hover { color: gold;
 
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1064px){
 /* Nav styles */
 
 .hamburger, .mobile {display: none;}
@@ -307,11 +308,9 @@ a:hover { color: gold;
         justify-content: space-evenly;
         flex-direction: row;
         height: 0;
+        width: 100%;
         margin: auto;
-        width: 80%;
     }
-	.menu-desktop {
-	}
 
     .menu-desktop a {
         display: inline-flex;
@@ -339,6 +338,8 @@ a:hover { color: gold;
 		margin:0 auto;
 		list-style: none;
 		padding-bottom: 100px;
+		padding-left: 24%;
+    	padding-right: 2%;
 	}
 
 	nav li {
