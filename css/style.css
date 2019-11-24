@@ -5,6 +5,17 @@ body {
 	font-size: 16px;
 	 }
 
+.about{ 
+
+  	background-image: url("https://www.wweek.com/resizer/YhFuKnsuklbepFP3yq8W6G_J-ZU=/1200x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/wweek/wp-content/uploads/2017/03/16095419/Luce_TT-16.jpg");
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+
+	font-family: 'PT Serif', serif;
+	text-align: left;
+	font-size: 16px;
+	 }
+
 h1, h2, h3, h4 {
 	font-family: 'PT Serif', serif;
 }
@@ -22,7 +33,10 @@ h2 {
 	font-size: 16px;
 	color: black;
 	text-align: left;
-	line-height: 1.0em;
+	line-height: 2.0em;
+	float: left;
+	width:90%;
+	padding-left: 13%;
 }
 
 h3 {
@@ -40,6 +54,11 @@ h4 {
 	text-align: center;
 	padding-top: 14.5em;
 	font-style: italic;
+}
+
+span {
+	font-size: 24px;
+	color: green;
 }
 
 .menu-title { 
