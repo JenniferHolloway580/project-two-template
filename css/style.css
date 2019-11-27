@@ -6,7 +6,7 @@ body {
 	 }
 
 .about{ 
-
+	background-size: cover;
   	background-image: url("https://www.wweek.com/resizer/YhFuKnsuklbepFP3yq8W6G_J-ZU=/1200x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/wweek/wp-content/uploads/2017/03/16095419/Luce_TT-16.jpg");
   	background-repeat: no-repeat;
   	background-attachment: fixed;
@@ -37,6 +37,7 @@ h2 {
 	float: left;
 	width:90%;
 	padding-left: 13%;
+	background-color: white;
 }
 
 h3 {
@@ -161,9 +162,9 @@ header > img {
 
 
 .nav, .desktop {
-    display: block;
+    /*display: block;
     width: 100%;
-    z-index: 900;
+    z-index: 900;*/
 }
 
 .icon {
@@ -260,11 +261,14 @@ header > img {
     }
 
 .grid {
-	display: grid;
+	/*display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 40px;
 	width: 90%;
-	margin: auto;
+	margin: auto;*/
+	float: left;
+  	width: 33.33%;
+  	padding: 10px;
 }
 
 .grid div {
@@ -354,7 +358,7 @@ a:hover { color: gold;
         display: none;
     }
 
-	nav {
+    nav {
 		margin:0 auto;
 		list-style: none;
 		padding-bottom: 100px;
@@ -388,6 +392,63 @@ a:hover { color: gold;
 		padding-top: 60px;
 	}
 	nav a:hover {color: gold;
+	}
+
+	#nav{
+    	background-color: white;
+    	float: none;
+  		position: absolute;
+  		top: 35%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		width: fit-content;
+	}
+
+	#nav li {
+		float: left;
+	}
+
+	#nav a { 
+		color: green;
+		text-align: center;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 100px;
+		text-decoration: none;
+		display: inline-block;
+		 }
+	a:hover { color: gold; 
+
+	}
+
+	#nav a {
+		color: green;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		padding-top: 60px;
+	}
+	#nav a:hover {color: gold;
+	}
+
+	#content2 {
+		float: right;
+	}
+
+	/* Create three equal columns that floats next to each other */
+	.column {
+	  float: left;
+	  width: 31.88%;
+	  padding: 10px;
+	  height: 300px;
+	  margin-top: 350px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
 	}
 
 
