@@ -98,6 +98,11 @@ header.reservations-bg {
 	background-position: 30% 50%;
 }
 
+.content2 {
+	padding-left: 2.9em;	
+}
+
+
 /* ensures that your images stretch the width of their containers */
 img { width: 75%;
     display: block;
@@ -122,7 +127,7 @@ header > img {
 
 #content {
 	color: black;
-	width: 300px;
+	width: 100%;
 	text-align: left !important;
 	margin: 0 auto;
 	padding-top: 2.9em;
@@ -280,6 +285,17 @@ header > img {
 	width: 60%;
 }
 
+.angelface {
+	width:200px;
+	margin-top: 80px
+	padding-left: 50px;
+}
+
+.navarre {
+	width:100px;
+	margin-top: 80px
+}
+
 @media only screen and (min-width: 768px) {
 body { 
 	font-size: 1.25rem;
@@ -322,7 +338,28 @@ a:hover { color: gold;
 
 }
 
-@media only screen and (min-width: 1064px){
+@media only screen and (max-width: 1394px){
+	/* Create three equal columns that floats next to each other */
+	  .column {
+	  float: left;
+	  width: 25%;
+	  padding: 10px;
+	  height: 300px;
+	  margin-top: 350px;
+	}
+
+	/* Create two equal columns that floats next to each other */
+	.column2 {
+	float: left;
+    width: 40%;
+    padding: 10px;
+    height: 200px;
+    margin-top: 350px;
+	}
+
+}
+
+@media only screen and (min-width: 1395px){
 /* Nav styles */
 
 .hamburger, .mobile {display: none;}
@@ -444,13 +481,21 @@ a:hover { color: gold;
 	  margin-top: 350px;
 	}
 
+	/* Create two equal columns that floats next to each other */
+	.column2 {
+	float: left;
+    width: 48.55%;
+    padding: 10px;
+    height: 200px;
+    margin-top: 350px;
+	}
+
 	/* Clear floats after the columns */
 	.row:after {
 	  content: "";
 	  display: table;
 	  clear: both;
 	}
-
 
 }
 
