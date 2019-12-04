@@ -5,6 +5,16 @@ body {
 	font-size: 16px;
 	 }
 
+	.Your@email.com {
+	color: #bbbbbb;
+	width: 160px;
+    float: left;
+    border: 1px solid #d2d2d2;
+    outline: 0
+    padding: 2px 4px;
+    margin-bottom: 14px;
+}
+
 .about{ 
 	background-size: cover;
   	background-image: url("https://www.wweek.com/resizer/YhFuKnsuklbepFP3yq8W6G_J-ZU=/1200x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/wweek/wp-content/uploads/2017/03/16095419/Luce_TT-16.jpg");
@@ -18,7 +28,7 @@ body {
 
 h1, h2, h3, h4 {
 	font-family: 'PT Serif', serif;
-}
+} 
 
 h1 {
 	font-size: 24px;
@@ -35,7 +45,7 @@ h2 {
 	text-align: left;
 	line-height: 2.0em;
 	float: left;
-	width:90%;
+	width: 90%;
 	padding-left: 13%;
 	background-color: white;
 }
@@ -62,6 +72,18 @@ span {
 	color: green;
 }
 
+span.text-right {
+font-size: inherit;
+color: black; 
+padding-left: 30%;
+}
+
+span.text2-right {
+float: right;
+font-size: inherit;
+color: black; 
+}
+
 .menu-title { 
 	font-style: italic;
 	font-weight: normal;
@@ -72,7 +94,6 @@ blockquote {
 	text-align: left;
 	font-style: italic;
 }
-
 
 strong {
 font-weight: bold !important; 
@@ -86,11 +107,11 @@ font-size: 16px;
 	margin: 20px auto;
 	outline: none;
 }
+
 /* Header styles */
 
 header {
-	background-color: white;}
-
+	background-color: white;
 }
 
 header.reservations-bg { 
@@ -128,9 +149,11 @@ header > img {
 #content {
 	color: black;
 	width: 100%;
-	text-align: left !important;
-	margin: 0 auto;
+	text-align: center !important;
+	margin:  auto;
 	padding-top: 2.9em;
+	padding-right: 19.9em;
+	padding-left: 18.9em;
 }
 
 .grid img {
@@ -139,11 +162,11 @@ header > img {
 
 .home-about-section {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap:10px;
+	grid-gap: 10px;
 }
 
 .sign-up a:hover {
+	a:hover
     color: gold;
 }
 
@@ -278,6 +301,7 @@ header > img {
 	float: left;
   	width: 33.33%;
   	padding: 10px;
+  	/*text-align: center;*/
 }
 
 .grid div {
@@ -286,17 +310,17 @@ header > img {
 }
 
 .menu-page .grid {
-	width: 60%;
+	width: 100%;
 }
 
 .angelface {
-	width:200px;
+	width: 200px;
 	margin-top: 80px
 	padding-left: 50px;
 }
 
 .navarre {
-	width:100px;
+	width: 100px;
 	margin-top: 80px
 }
 
@@ -315,6 +339,11 @@ body {
 .desktop  li {
 	float: left;
 }
+
+.checkered-pattern {
+	width: 100px;
+}
+
 
 /*nav a { 
 	color: green;
@@ -337,8 +366,9 @@ a:hover { color: gold;
 	text-decoration: none;
 	padding-top: 60px;
 }
-.desktop nav a:hover {color: gold;
-}
+.desktop nav a:hover {
+	color: gold;
+	}
 
 }
 
@@ -347,7 +377,7 @@ a:hover { color: gold;
 	  .column {
 	  float: left;
 	  width: 25%;
-	  padding: 10px;
+	  padding: 30px;
 	  height: 300px;
 	  margin-top: 350px;
 	}
@@ -359,6 +389,13 @@ a:hover { color: gold;
     padding: 10px;
     height: 200px;
     margin-top: 350px;
+	}
+
+	.column3 {
+	float: left;
+    width: 40%;
+    padding: 10px;
+    height: 200px;
 	}
 
 }
@@ -494,6 +531,13 @@ a:hover { color: gold;
     margin-top: 350px;
 	}
 
+	.column3 {
+	float: left;
+    width: 40%;
+    padding: 10px;
+    height: 200px;
+	}
+
 	/* Clear floats after the columns */
 	.row:after {
 	  content: "";
@@ -503,20 +547,12 @@ a:hover { color: gold;
 
 }
 
-@media only screen and (min-width: 768px)
-	body { 
-background-color: skyblue:
- }
-
-}
-@media only screen and (min-width: 1200px)
-	body { 
-background-color: pink:
- }
+@media only screen and (min-width: 1200px) {
 
 /* Footer styles */
 footer img{ 
 	width: 100%;
+	}
 }
 
  /*
