@@ -291,7 +291,9 @@ header > img {
 .desktop, .menu-desktop, .menu-mobile {
         display: none;
     }
-
+.menu-desktop ul{
+	list-style-type: none;
+}
 .grid {
 	/*display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -343,6 +345,11 @@ body {
 
 .checkered-pattern {
 	width: 100px;
+}
+
+.green-bar {
+	padding-bottom: 10px;
+	margin-top: 20px;
 }
 
 
@@ -417,9 +424,10 @@ a:hover { color: gold;
 
     .menu-desktop a {
         display: inline-flex;
-        margin-right: 30px;
+        margin-right: 53px;
         height: 0;
         line-height: 50px;
+        font-size: 18px;
         text-decoration: none;
         justify-content: space-evenly;
     }
@@ -474,13 +482,17 @@ a:hover { color: gold;
 	}
 
 	#nav{
-    	background-color: white;
-    	float: none;
+    	/*float: none;
   		position: absolute;
   		top: 35%;
   		left: 50%;
   		transform: translate(-50%, -50%);
-  		width: fit-content;
+  		width: fit-content;*/
+  		margin:auto;
+  		background-color: white;
+    	padding-left: 24%;
+    	padding-right: 2%;
+    	padding-bottom: 120px;
 	}
 
 	#nav li {
