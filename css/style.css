@@ -45,7 +45,7 @@ h2 {
 	text-align: left;
 	line-height: 2.0em;
 	float: left;
-	width: 90%;
+	width: 100%;
 	padding-left: 13%;
 	background-color: white;
 }
@@ -153,6 +153,11 @@ header > img {
 	display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+article {
+	background-color: white;
+	margin-top: 18em;
 }
 
 #contact {
@@ -343,13 +348,19 @@ header > img {
 	font-size: 13px
 }
 
+.row{
+	width: 100%;
+	margin-top: 350px;
+	background-color: white;
+}
+
 /* Create three equal columns that floats next to each other */
 .column {
 	float: left;
 	width: 31.88%;
 	padding: 10px;
-	height: 300px;
-	margin-top: 350px;
+	height: inherit;
+	column-fill: auto;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -513,10 +524,8 @@ header > img {
 	/* Create three equal columns that floats next to each other */
 	  .column {
 	  float: left;
-	  width: 25%;
+	  width: 27%;
 	  padding: 30px;
-	  height: 300px;
-	  margin-top: 350px;
 	}
 
 	/* Create two equal columns that floats next to each other */
@@ -633,3 +642,15 @@ a:hover { color: gold;
 	}
 
 }
+
+
+@media only screen and (max-width: 768px){
+	
+	.column {
+		float: left;
+		width: 50%;
+		padding: 30px;
+	}
+}
+
+
