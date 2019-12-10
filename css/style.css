@@ -34,8 +34,6 @@ h1 {
 	font-size: 24px;
 	color: green;
 	text-align: center;
-	padding-top: 1.5em;
-	padding-left: 10.1em;
 
 }
 
@@ -45,8 +43,8 @@ h2 {
 	text-align: left;
 	line-height: 2.0em;
 	float: left;
-	width: 90%;
-	padding-left: 13%;
+	width: 100%;
+	padding-left: 12.5%;
 	background-color: white;
 }
 
@@ -70,6 +68,7 @@ h4 {
 span {
 	font-size: 24px;
 	color: green;
+	font-weight: bold;
 }
 
 span.text-right {
@@ -79,14 +78,22 @@ padding-left: 30%;
 }
 
 span.text2-right {
-float: right;
-font-size: inherit;
+font-size: 18px;
 color: black; 
+}
+
+span.light-font{
+	font-weight: 500;
+	font-size: 16px;
 }
 
 .menu-title { 
 	font-style: italic;
 	font-weight: normal;
+	width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
 }
 blockquote {
 	margin: 20px 60px;
@@ -120,15 +127,28 @@ header.reservations-bg {
 }
 
 .content2 {
-	padding-left: 2.9em;	
+	color: black;
+	width: 100%;
+	text-align: center !important;
+	margin:  auto;
+	padding-right: 19.9em;
+	padding-left: 18.9em;	
 }
 
 
 /* ensures that your images stretch the width of their containers */
-img { width: 75%;
+img { width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#checkered {
+	width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height: 90px;
 }
 
 /* Main styles */
@@ -142,18 +162,22 @@ header > img {
     margin-right: auto;
 }
 
+article {
+	background-color: white;
+	margin-top: 18em;
+}
+
 #contact {
 	color: green;
+	font-size: 16px;
 }
 
 #content {
 	color: black;
-	width: 100%;
+	width: 500px;
 	text-align: center !important;
 	margin:  auto;
 	padding-top: 2.9em;
-	padding-right: 19.9em;
-	padding-left: 18.9em;
 }
 
 .grid img {
@@ -301,9 +325,10 @@ header > img {
 	width: 90%;
 	margin: auto;*/
 	float: left;
-  	width: 33.33%;
   	padding: 10px;
   	padding-left: 7%;
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
   	/*text-align: center;*/
 }
 
@@ -327,86 +352,58 @@ header > img {
 	margin-top: 80px
 }
 
-@media only screen and (min-width: 768px) {
-body { 
-	font-size: 1.25rem;
- }
-
-.desktop nav {
-	width: 750px;
-	margin:0 auto;
-	list-style: none;
-	padding-bottom: 100px;
+#menu-font {
+	font-size: 14px
 }
 
-.desktop  li {
+#menu-font p {
+	line-height: 20px;
+}
+
+.row{
+	width: 100%;
+	margin-top: 350px;
+	background-color: white;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
 	float: left;
+	width: 30.00%;
+	padding: 10px;
+	height: inherit;
+	column-fill: auto;
 }
 
-.checkered-pattern {
-	width: 100px;
+/* Create two equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 48.55%;
+  padding: 10px;
+  height: 200px;
+  margin-top: 350px;
 }
 
-.green-bar {
-	padding-bottom: 10px;
-	margin-top: 20px;
+.column3 {
+  float: left;
+  width: 45.6%;
+  padding: 10px;
+  height: 200px;
+  font-size: 17px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 
-/*nav a { 
-	color: green;
-	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 100px;
-	text-decoration: none;
-	display: inline-block;
-	 }
-a:hover { color: gold; 
 
-}*/
 
-.desktop nav a {
-	color: green;
-	display: block;
-	text-align: center;
-	width: 150px;
-	text-decoration: none;
-	padding-top: 60px;
-}
-.desktop nav a:hover {
-	color: gold;
-	}
 
-}
-
-@media only screen and (max-width: 1394px){
-	/* Create three equal columns that floats next to each other */
-	  .column {
-	  float: left;
-	  width: 25%;
-	  padding: 30px;
-	  height: 300px;
-	  margin-top: 350px;
-	}
-
-	/* Create two equal columns that floats next to each other */
-	.column2 {
-	float: left;
-    width: 40%;
-    padding: 10px;
-    height: 200px;
-    margin-top: 350px;
-	}
-
-	.column3 {
-	float: left;
-    width: 40%;
-    padding: 10px;
-    height: 200px;
-	}
-
-}
+/* This media query is bigger than or equal to 1395px */
 
 @media only screen and (min-width: 1395px){
 /* Nav styles */
@@ -523,22 +520,29 @@ a:hover { color: gold;
 	}
 
 	#content2 {
-		float: right;
+		color: black;
+		width: 100%;
+		text-align: center !important;
+		margin:  auto;	
 	}
+}
 
+
+
+/* media query applies to max width pixel size 1394px and lower */
+
+@media only screen and (max-width: 1394px){
 	/* Create three equal columns that floats next to each other */
-	.column {
+	  .column {
 	  float: left;
-	  width: 31.88%;
-	  padding: 10px;
-	  height: 300px;
-	  margin-top: 350px;
+	  width: 27%;
+	  padding: 30px;
 	}
 
 	/* Create two equal columns that floats next to each other */
 	.column2 {
 	float: left;
-    width: 48.55%;
+    width: 40%;
     padding: 10px;
     height: 200px;
     margin-top: 350px;
@@ -551,14 +555,17 @@ a:hover { color: gold;
     height: 200px;
 	}
 
-	/* Clear floats after the columns */
-	.row:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
-
 }
+
+/* media query max-width: 1218 lower */
+
+@media only screen and (max-width: 1218px) {
+	.column3 {
+		font-size: 14px;
+	}
+}
+
+/* media query 1200 and above */
 
 @media only screen and (min-width: 1200px) {
 
@@ -568,8 +575,93 @@ footer img{
 	}
 }
 
- /*
-font-family: 'Mansalva', cursive;
-font-family: 'Dosis', sans-serif;
-font-family: 'Indie Flower', cursive;
-*/
+
+/* media query max-width: 1025px and lower */
+
+@media only screen and (max-width: 1025px) {
+	.column3 {
+		font-size: 14px;
+		width: 100%;
+		height: auto;
+	}
+
+	#content {
+		color: black;
+		width: 200px;
+		text-align: center !important;
+		margin:  auto;
+		padding-top: 2.9em;
+		padding-right: 0px;
+    	padding-left: 0px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+}
+
+/* media query 768px and above */
+
+@media only screen and (min-width: 768px) {
+body { 
+	font-size: 1.25rem;
+ }
+
+.desktop nav {
+	width: 750px;
+	margin:0 auto;
+	list-style: none;
+	padding-bottom: 100px;
+}
+
+.desktop  li {
+	float: left;
+}
+
+.checkered-pattern {
+	width: 100px;
+}
+
+.green-bar {
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+
+
+/*nav a { 
+	color: green;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 100px;
+	text-decoration: none;
+	display: inline-block;
+	 }
+a:hover { color: gold; 
+
+}*/
+
+.desktop nav a {
+	color: green;
+	display: block;
+	text-align: center;
+	width: 150px;
+	text-decoration: none;
+	padding-top: 60px;
+}
+.desktop nav a:hover {
+	color: gold;
+	}
+
+}
+
+
+@media only screen and (max-width: 768px){
+	
+	.column {
+		float: left;
+		width: 50%;
+		padding: 30px;
+	}
+}
+
+

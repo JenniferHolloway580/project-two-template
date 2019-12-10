@@ -16,71 +16,73 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
+	<!--info for slide show -->
+
 	<style>
-	* {box-sizing: border-box;}
-	.mySlides {display: none;}
-	img {vertical-align: middle;}
+		* {box-sizing: border-box;}
+		.mySlides {display: none;}
+		img {vertical-align: middle;}
 
-	/* Slideshow container */
-	.slideshow-container {
-	  max-width: 1000px;
-	  position: relative;
-	  margin: auto;
-	}
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
 
-	/* Caption text */
-	.text {
-	  color: #f2f2f2;
-	  font-size: 15px;
-	  padding: 8px 12px;
-	  position: absolute;
-	  bottom: 8px;
-	  width: 100%;
-	  text-align: center;
-	}
+		/* Caption text */
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
 
-	/* The dots/bullets/indicators */
-	.dot {
-	  height: 15px;
-	  width: 15px;
-	  margin: 0 2px;
-	  background-color: #bbb;
-	  border-radius: 50%;
-	  display: inline-block;
-	  transition: background-color 0.6s ease;
-	}
+		/* The dots/bullets/indicators */
+		.dot {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
 
-	.active {
-	  background-color: #fff;
-	}
+		.active {
+		  background-color: #fff;
+		}
 
-	/* Fading animation */
-	.fade {
-	  -webkit-animation-name: fade;
-	  -webkit-animation-duration: 1.5s;
-	  animation-name: fade;
-	  animation-duration: 1.5s;
-	}
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
 
-	@-webkit-keyframes fade {
-	  from {opacity: .4} 
-	  to {opacity: 1}
-	}
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
 
-	@keyframes fade {
-	  from {opacity: .4} 
-	  to {opacity: 1}
-	}
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
 
-	/* On smaller screens, decrease text size */
-	@media only screen and (max-width: 300px) {
-	  .text {font-size: 11px}
-	}
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .text {font-size: 11px}
+		}
 	</style>
 
 </head>
 <body>
-	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
+	<!-- These are my header logo and and hambuger navigation bar -->
 
 	<header>
 		<img src="images/luce-logo.png">
@@ -114,15 +116,7 @@
 	    </header>
    </div>
 
-<!-- 	<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="menu.html">Menu</a></li>
-				<li><a href="hours-locations.html">Hours-Locations</a></li>
-				<li><a href="reservations.html">Reservations</a></li>
-			</ul>
-	</nav> -->
+   <!-- The next code is for slideshow -->
 
 	<br>
 	<div class="slideshow-container" style="margin-top: 120px;">
@@ -165,30 +159,29 @@
 
 	<main>
 		
-	<!-- Main content here -->
+	<!-- For contact info -->
 
 	<section class = "home-about-section">
-		<article>
-
-	<div id="content">
-		<div class="column3">
-		<p style="color:Green; text-align: left;"><strong>CONTACT US:</strong><br><br>
-		<p style="color:Black; text-align: left;">2140 E Burnside Street<br><br>
-		Portland Oregon 97214<br><br>
-		503. 236. 7195<br><br>
-		info@luceportland.com</p><br><br>
-		</div>
-		<div class="column3">
-		<div id="content2">
-		<p style="color:Green; text-align: left;"><strong>MAILING LIST</strong><br><br></p><p style="color:Black; text-align: left;">Your@email.com<br><br><strong>Sign up</strong></p>
-		</div>
-	</article> 
+			<div id="content">
+				<div class="column3">
+					<p style="color:Green; text-align: left;"><strong>CONTACT US:</strong><br><br></p>
+					<p style="color:Black; text-align: left;">2140 E Burnside Street<br><br>
+					Portland Oregon 97214<br><br>
+					503. 236. 7195<br><br>
+					info@luceportland.com</p><br><br>
+				</div>
+				<div class="column3">
+					<div id="content2">
+						<p style="color:Green; text-align: left;"><strong>MAILING LIST</strong><br><br></p><p style="color:Black; text-align: left;">Your@email.com<br><br><strong>Sign up</strong></p>
+					</div>
+				</div>
+			</div>
 	</section>
 	</main>
 
 	<footer>
 		<!-- footer content here -->
-		<img src="images/checkered-pattern.png">
+		<img id="checkered" src="images/checkered-pattern.png" style="margin-top: 20px;">
 	</footer>
 
 	<script>
